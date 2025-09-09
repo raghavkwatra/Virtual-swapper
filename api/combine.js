@@ -51,7 +51,7 @@ module.exports = async (req, res) => {
       },
     };
     const textPart = {
-      text: "You are an AI stylist. Your task is to take the person from the first image and dress them in the clothing from the second image. Generate a new, realistic image showing the person wearing the specified clothing. Preserve the person's original pose and facial expression as much as possible. The background should be simple or match the original person's image."
+      text: "Generate an image of the person from the first image wearing the clothes from the second image. The person's face, pose, and the background should remain the same as the first image."
     };
 
     // 5. Call the Gemini API and handle the response
