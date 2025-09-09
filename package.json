@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "private": true,
   "scripts": {
-    "build": "esbuild index.tsx --bundle --outfile=index.js --format=esm --loader:.tsx=tsx --external:react --external:react-dom/*"
+    "build": "mkdir -p public && cp index.html public/ && esbuild index.tsx --bundle --outfile=public/index.js --format=esm --loader:.tsx=tsx --external:react --external:react-dom/*"
   },
   "dependencies": {
     "@google/genai": "^1.18.0",
