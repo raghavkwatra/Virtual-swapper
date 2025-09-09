@@ -2,10 +2,18 @@
   "name": "ai-virtual-try-on-serverless",
   "version": "1.0.0",
   "private": true,
+  "scripts": {
+    "build": "esbuild index.tsx --bundle --outfile=index.js --format=esm --loader:.tsx=tsx --external:react --external:react-dom/*"
+  },
   "dependencies": {
     "@google/genai": "^1.18.0",
     "react": "^19.1.1",
-    "react-dom": "^19.1.1",
-    "@remix-run/dev": "^2.9.2"
+    "react-dom": "^19.1.1"
+  },
+  "devDependencies": {
+    "@types/react": "^18.3.3",
+    "@types/react-dom": "^18.3.0",
+    "esbuild": "^0.21.4",
+    "typescript": "^5.4.5"
   }
 }
