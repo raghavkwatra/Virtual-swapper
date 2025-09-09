@@ -1,0 +1,5 @@
+{
+  "name": "AI Virtual Try-On",
+  "description": "An application that uses the Gemini NanoBanana model to combine an image of a person with an image of clothing, creating a virtual try-on experience.",
+  "requestFramePermissions": []
+}
